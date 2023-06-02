@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>we?</title>
-    <style>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>we?</title>
+<style>
         body {
             background-color: purple;
             overflow: hidden;
@@ -14,6 +14,7 @@
             text-align: center;
             text-transform: uppercase;
             color: #fff;
+            font-size: 1.5rem;
         }
         .center{
             display: flex;
@@ -47,31 +48,37 @@
             background-color: #fff;
             background-repeat: no-repeat;
             background-position: center;
-            height: 300px;
-            width: 300px;
+            height: 200px;
+            width: 200px;
             margin: 0 auto;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
             border-radius: 50%;
         }
-    </style>
+</style>
 </head>
 <body>
-    <div class="center">
-        <h1>Mo da o cu pra mim?</h1>
-    </div>
-    <div class="img"></div>
-    <div class="btn">
-        <button id="sim" onclick="openLink('https://youtu.be/M4ZoCHID9GI?t=56')">Sim</button>
-        <button id="nao">Não</button>
-    </div>
-    <script>
+<div class="center">
+<h1>Mo da o cu pra mim?</h1>
+</div>
+<div class="img"></div>
+<div class="btn">
+<button id="sim" onclick="openLink('https://youtu.be/M4ZoCHID9GI?t=56')">Sim</button>
+<button id="nao">Não</button>
+</div>
+<script>
         function openLink(url) {
             window.open(url, "_blank");
         }
-        
+
+ 
+
         const naoBtn = document.querySelector('#nao');
         const simBtn = document.querySelector('#sim');
         const img = document.querySelector('.img');
+
+ 
+
+ 
 
         simBtn.addEventListener('mouseover', ()=>{
             img.style.backgroundImage = "url('https://1.bp.blogspot.com/-6_VKAu7F8lg/UOPQPTfvprI/AAAAAAAAAqM/zVBh-I0t0Ic/s1600/gato+shrek+sherek+shereck+shrk+cat+shereke+de+botas+boots.jpg')";
@@ -84,6 +91,6 @@
             naoBtn.style.left = Math.floor(Math.random() * window.innerWidth) + "px";
             naoBtn.style.top = Math.floor(Math.random() * window.innerHeight) + "px"; 
         });
-    </script>
+</script>
 </body>
 </html>
